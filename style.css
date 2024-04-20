@@ -153,11 +153,15 @@ p{
   100% { height: 0%;}
 }
 
-@media only screen and (max-width: 539px){
+@media only screen and (max-width: 540px){
   .container-1{
-    margin-top: 100px;
+    margin-top: 150px;
   }
 }
+
+
+
+
 
 .main{
   background-color: rgb(1, 24, 1);
@@ -172,28 +176,46 @@ p{
 .text-5{
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  width: 400px;
-  height: 130px;
+  width: 310px;
+  height: 120px;
   font-size: 20px;
   background-color: rgb(234, 165, 165);
+  display: flex;
+  border: none;
+  outline: none;
 }
 
 .text-5:focus{
   outline: none;
 }
 
-
 .main-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main-1 .heading{
   background-color: rgb(247, 101, 125);
-  width: 400px;
+  width: 310px;
   padding-top: 10px;
   padding-left: 20px;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: flex;
-  gap: 10px;
+  border-top-right-radius: 20px;  
   margin-top: 60px;
   color: white;
+  display: flex;
+  gap: 10px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .main-1 img{
@@ -217,10 +239,16 @@ section .img-2{
 
 button{
   padding: 20px 20px 20px 20px;
-  width: 400px;
+  width: 250px;
   margin-top: 40px;
   border-radius: 20px;
   background-color: rgb(0, 0, 0);
   color: white;
   font-size: 20px;
+}
+
+.universal-container-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
