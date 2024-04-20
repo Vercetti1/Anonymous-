@@ -50,6 +50,13 @@ body{
     margin-top: 50px;
 }
 
+.sign-up-box-1{
+  background-color: white;
+  width: 300px;
+  height: 320px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
 .sign-up-box-items{
     margin-top: 30px;
     display: flex;
