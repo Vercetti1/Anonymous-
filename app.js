@@ -21,3 +21,24 @@ function checkPassword(){
         alert("Password can't be empty!");
     }
 }
+
+function sendMail(){
+    var params = {
+        message: document.getElementById("message").value,
+    };
+
+
+const serviceID = "service_4ayr51b";
+const templateID = "template_daazv6a";
+
+emailjs.send(serviceID, templateID, params)
+
+.then(
+    (res) =>{
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("sent");
+    }
+)
+.catch((err) => console.log(err));
+}

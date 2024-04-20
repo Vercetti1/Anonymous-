@@ -86,6 +86,8 @@ input[type="button"]{
     width: 100px;
     color: white;
     margin-top: 10px;
+    outline: none;
+    border: none;
 
 
 }

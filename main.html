@@ -8,6 +8,17 @@
     <title>Send a Message</title>
     <link rel="icon" type="image/png" href="https://img.icons8.com/emoji/48/shushing-face.png" alt="shushing-face"/>
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "JqVQG0eIswF2c4BKu",
+      });
+   })();
+</script>
+     <script src="./app.js"></script>
 </head>
 <body class="main" onload="hideLoader()">
     <header class="container-1">
@@ -24,12 +35,12 @@
             </div>
     </main>
     <section>
-        <textarea class="text-5" name="" id="" cols="" rows="5"></textarea>
+        <textarea class="text-5" name="" id="message" cols="" rows="5"></textarea>
         <div class="text-6">
             <img class="img-2" src="./assets/3d-lock.png" alt="">
             <span>anonymous q&a</span>
         </div>
-        <button>Send!</button>
+        <button onclick="sendMail()">Send!</button>
         
     </section>
 
