@@ -1,5 +1,5 @@
 function hideLoader(){
-    $('.loader-wrapper').fadeOut(1800)
+    $('.loader-wrapper').fadeOut(1800);
 }
 
 function checkPassword(){
