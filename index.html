@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Say.io</title>
-    <link rel="icon" type="image/png" href="https://img.icons8.com/emoji/48/shushing-face.png" alt="shushing-face"/>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/emoji/48/shushing-face.png" alt="shushing-face" />
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript"> 
-        (function(){
-                emailjs.init("GKFhNbBSmzJ_8V5VI");
-        })();
-    </script>
+</script>
 
 </head>
+
 <body onload="hideLoader()">
     <header class="container-1">
         <div class="text-1">say.<span class="text-1-red">io</span></div>
@@ -29,16 +26,16 @@
             <div class="sign-up-box-items">
                 <header class="text-3">Sign Up</header>
                 <input class="input-box" type="email" placeholder="Enter your Email">
-                <input class="input-box" type="password" id="password" placeholder="Enter your Password">
+                <input clas s="input-box" type="password" id="password" placeholder="Enter your Password">
                 <input class="input-box" type="password" id="confirm-password" placeholder="Confirm Password">
                 <p id="message"></p>
                 <a href="./login.html"><input type="button" value="Sign Up" onclick="checkPassword()"></a>
                 <span class="login-link">Have an Account? <a class="link" href="./login.html">Login now</a></span>
             </div>
-            
+
         </div>
     </section>
-    
+
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
@@ -46,4 +43,5 @@
 
     <script src="./app.js"></script>
 </body>
+
 </html>

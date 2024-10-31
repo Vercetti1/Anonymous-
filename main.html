@@ -8,17 +8,7 @@
     <title>Send a Message</title>
     <link rel="icon" type="image/png" href="https://img.icons8.com/emoji/48/shushing-face.png" alt="shushing-face"/>
     <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "JqVQG0eIswF2c4BKu",
-      });
-   })();
-</script>
-     <script src="./app.js"></script>
+    <script src="./app.js"></script>
 </head>
 <body class="main" onload="hideLoader()">
     <div class="universal-container">
@@ -30,23 +20,22 @@
     <main class="main-1">
         <div class="heading">
             <div><img src="./assets/vercetti.jpg" alt=""></div>
-            
             <div>
                 <span>@vercetti.dev</span><br>
                 <span>send me anonymous messages!</span>
             </div>
         </div>
             
-
+           
             <section>
                 <input type="text" id="message" class="text-5" placeholder="enter a message">
                 <div class="text-6">
                     <img class="img-2" src="./assets/3d-lock.png" alt="">
                     <span>anonymous q&a</span>
                 </div>
-                <button onclick="sendMail()">Send!</button>
-                
+                <button>Send!</button>
             </section>
+            
     </main>
     
 
